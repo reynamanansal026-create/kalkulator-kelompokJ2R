@@ -18,3 +18,16 @@ def bagi(a, b):
     if b == 0:
         return "Error: Tidak bisa membagi dengan nol!"
     return a / b
+# Bagian Input User
+def get_menu():
+    print("=== Kalkulator Sederhana ===")
+    print("1. Tambah")
+    print("2. Kurang")
+    print("3. Kali")
+    print("4. Bagi")
+    return input("Pilih operasi (1/2/3/4): ")
+
+def get_angka():
+    angka1 = float(input("Masukkan angka pertama: "))
+    angka2 = float(input("Masukkan angka kedua: "))
+    return angka1, angka2
